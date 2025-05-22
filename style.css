@@ -1,0 +1,19 @@
+div{
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+div:hover{
+    background-color: white;
+    border: 5px solid blue;
+    color: black;
+    transition: 0.5s;
+}
+p{
+    font-size: 20px;
+    width: 700px;
+    margin: 0 auto;
+}
