@@ -182,12 +182,16 @@
 // console.log(document.querySelector("p"))
 // // // query selector all
 // console.log(document.querySelectorAll("p"))
-console.log(document.querySelectorAll("li")[2].innerText)
-console.log(document.querySelectorAll("li")[5].innerText)
-console.log(document.querySelectorAll("li")[1].innerText)
-console.log(document.querySelectorAll("li")[2].innerText)
-console.log(document.querySelectorAll("li")[4].innerText)
-console.log(document.querySelectorAll("li")[0].innerText)
+// console.log(document.querySelectorAll("li")[2].innerText)
+// console.log(document.querySelectorAll("li")[5].innerText)
+// console.log(document.querySelectorAll("li")[1].innerText)
+//console.log(document.querySelectorAll("li")[2].textContent = "pork by javascriptz")
+// console.log(document.querySelectorAll("li")[4].innerText)
+// console.log(document.querySelectorAll("li")[0].innerText)
+
+//console.log(document.getElementById("change").textContent = "eba by javascriptz")
+
+
 // to get element 
 // textContent
 // innerHTML
@@ -205,6 +209,40 @@ console.log(document.querySelectorAll("li")[0].innerText)
 //  for (let i = 1; i <= num; i++){
 //      sum += 1/i;
 // }
+//  console.log(`the sum of the harmonic sequence is ${sum}`);
+
+//event listerners
+// document.getElementById("btn").addEventListener("click", function(){
+//     alert("button clicked");
+// });
+// document.getElementById("btn").addEventListener("mouseover", function(){
+//     alert("mouse over button");
+// });
+// document.getElementById("btn").addEventListener("mouseout", function(){
+//     alert("mouse out of button");
+// });
+// document.getElementById("btn").addEventListener("dblclick", function(){
+//     alert("button double clicked");
+// });
+
+let header = document.getElementById("header");
+
+header.style.color = "red";
+header.style.backgroundColor = "rgb(39, 245, 12)";
+header.style.fontSize = "50px";
+header.style.textAlign = "center";
+header.style.padding = "20px";
+header.style.border = "2px solid black";
+header.style.borderRadius = "10px";
+header.style.boxShadow = "0 10px 10px rgba(0, 0, 0, 0.5)";
+header.style.transition = "all 0.3s ease-in-out";
+header.style.width = "max-content";
+header.style.margin = "30px auto";
+
+function HeaderColor() {
+    alert("header clicked");
+    return HeaderColor
+}
 
 
 
