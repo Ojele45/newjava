@@ -4,7 +4,7 @@ div{
     background-color: rgb(39, 0, 0);
     border: 7px solid rgb(39, 245, 12);
     border-radius: 25px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding: 10px;
      transition: all 0.5s;
 }

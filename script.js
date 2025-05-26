@@ -225,25 +225,38 @@
 //     alert("button double clicked");
 // });
 
-let header = document.getElementById("header");
+// let header = document.getElementById("header");
 
-header.style.color = "red";
-header.style.backgroundColor = "rgb(39, 245, 12)";
-header.style.fontSize = "50px";
-header.style.textAlign = "center";
-header.style.padding = "20px";
-header.style.border = "2px solid black";
-header.style.borderRadius = "10px";
-header.style.boxShadow = "0 10px 10px rgba(0, 0, 0, 0.5)";
-header.style.transition = "all 0.3s ease-in-out";
-header.style.width = "max-content";
-header.style.margin = "30px auto";
+// header.style.color = "red";
+// header.style.backgroundColor = "rgb(39, 245, 12)";
+// header.style.fontSize = "50px";
+// header.style.textAlign = "center";
+// header.style.padding = "20px";
+// header.style.border = "2px solid black";
+// header.style.borderRadius = "10px";
+// header.style.boxShadow = "0 10px 10px rgba(0, 0, 0, 0.5)";
+// header.style.transition = "all 0.3s ease-in-out";
+// header.style.width = "max-content";
+// header.style.margin = "30px auto";
 
-function HeaderColor() {
-    alert("header clicked");
-    return HeaderColor
+// function HeaderColor() {
+//     let colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+//     let randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     header.style.color = randomColor;
+//     header.style.backgroundColor = randomColor;
+// }
+document.getElementById("btn").addEventListener("click", closed);
+headers = document.getElementById("myId");
+ let closed = () => {
+    if (headers.textContent === "Close")
+    {
+        headers.textContent = "Open";
+    }
+    else{
+        headers.textContent = "Close";
+    }
 }
-
-
+ 
+ 
 
 
