@@ -245,18 +245,99 @@
 //     header.style.color = randomColor;
 //     header.style.backgroundColor = randomColor;
 // }
-document.getElementById("btn").addEventListener("click", closed);
-headers = document.getElementById("myId");
- let closed = () => {
-    if (headers.textContent === "Close")
-    {
-        headers.textContent = "Open";
-    }
-    else{
-        headers.textContent = "Close";
-    }
+// document.getElementById("btn").addEventListener("click", closed);
+// headers = document.getElementById("myId");
+//  let closed = () => {
+//     if (headers.textContent === "Close")
+//     {
+//         headers.textContent = "Open";
+//     }
+//     else{
+//         headers.textContent = "Close";
+//     }
+// }
+ 
+function AddNewTask (){
+    let inputBox = document.getElementById("todo-input");
+    // document.getElementById("newtext").textContent = inputBox.value;
+    let newElement = document.createElement("li");
+
+    newElement.addEventListener("click", function() {
+        newElement.classList.add("checked");
+    });
+
+    newElement.textContent = inputBox.value;
+    document.getElementById("task-list").appendChild(newElement);
+    inputBox.value = ""; // Clear the input box after adding the task
 }
- 
- 
 
+// function changeBg() {
+    
+//     let BgColor = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "lime", "teal", "brown", "gray", "lightblue", "lightgreen", "lightcoral", "lightpink", "lightyellow", "lightgray", "lavender", "peachpuff"];
+//     let randomColor = BgColor[Math.floor(Math.random() * BgColor.length)];
+//     document.body.style.backgroundColor = randomColor;
+// }
 
+// function AnimatedColorChange() {
+//     let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "lime", "teal", "brown", "gray", "lightblue", "lightgreen", "lightcoral", "lightpink", "lightyellow", "lightgray", "lavender", "peachpuff"];
+    
+//     let index = 0;
+    
+//     setInterval(() => {
+//         document.body.style.backgroundColor = colors[index];
+//         index = (index + 1) % colors.length; // Loop through the colors
+//     }, 100); // Change color every second
+// }
+function AnimatedColorChange() {
+    let divColor = document.getElementById("div");
+    let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "lime", "teal", "brown", "gray", "lightblue", "lightgreen", "lightcoral", "lightpink", "lightyellow", "lightgray", "lavender", "peachpuff", "coral", "gold", "silver", "maroon", "navy", "olive", "darkgreen", "darkblue", "darkred", "darkorange", "darkviolet", "darkcyan", "darkmagenta", "darkslategray", "indigo", "khaki", "lightseagreen", "lightsalmon", "lightsteelblue", "mediumaquamarine", "mediumorchid", "mediumseagreen", "mediumslateblue", "mediumturquoise", "mediumvioletred", "mistyrose", "moccasin", "navajowhite", "oldlace", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff", "peru", "pink", "plum", "powderblue", "rosybrown", "royalblue", "saddlebrown", "salmon", "sandybrown", "seagreen", "seashell", "sienna", "skyblue", "slateblue", "slategray", "snow", "springgreen", "steelblue", "tan", "thistle", "tomato", "turquoise", "violet", "wheat", "whitesmoke", "yellowgreen", "lightgoldenrodyellow", "lightcyan", "lightcoral", "lightpink", "lightskyblue", "lightslategray", "lightyellow", "darkgray", "darkkhaki", "darkolivegreen", "darkorchid", "darkslateblue", "darkturquoise", "darkviolet", "dimgrey", "firebrick", "floralwhite", "gainsboro", "ghostwhite", "goldenrod", "greenyellow", "honeydew", "hotpink", "indianred", "ivory", "lavenderblush", "lemonchiffon", "lightblue", "lightgreen", "lightgrey", "lightslateblue", "lightsteelblue", "limegreen", "linen", "mediumblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue", "mintcream", "mistyrose", "moccasin", "navajowhite", "oldlace", "olivedrab", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff"];
+    let index = 0;
+    
+    setInterval(() => {
+        divColor.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length; // Loop through the colors
+    }, 200); // Change color every second
+}
+function AnimatedTextColorChange() {
+    let textElement = document.getElementById("text");
+    let colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "lime", "teal", "brown", "gray", "lightblue", "lightgreen", "lightcoral", "lightpink", "lightyellow", "lightgray", "lavender", "peachpuff", "coral", "gold", "silver", "maroon", "navy", "olive", "darkgreen", "darkblue", "darkred", "darkorange", "darkviolet", "darkcyan", "darkmagenta", "darkslategray", "indigo", "khaki", "lightseagreen", "lightsalmon", "lightsteelblue", "mediumaquamarine", "mediumorchid", "mediumseagreen", "mediumslateblue", "mediumturquoise", "mediumvioletred", "mistyrose", "moccasin", "navajowhite", "oldlace", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff", "peru", "pink", "plum", "powderblue", "rosybrown", "royalblue", "saddlebrown", "salmon", "sandybrown", "seagreen", "seashell", "sienna", "skyblue", "slateblue", "slategray", "snow", "springgreen", "steelblue", "tan", "thistle", "tomato", "turquoise", "violet", "wheat", "whitesmoke", "yellowgreen", "lightgoldenrodyellow", "lightcyan", "lightcoral", "lightpink", "lightskyblue", "lightslategray", "lightyellow", "darkgray", "darkkhaki", "darkolivegreen", "darkorchid", "darkslateblue", "darkturquoise", "darkviolet", "dimgrey", "firebrick", "floralwhite", "gainsboro", "ghostwhite", "goldenrod", "greenyellow", "honeydew", "hotpink", "indianred", "ivory", "lavenderblush", "lemonchiffon", "lightblue", "lightgreen", "lightgrey", "lightslateblue", "lightsteelblue", "limegreen", "linen", "mediumblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue", "mintcream", "mistyrose", "moccasin", "navajowhite", "oldlace", "olivedrab", "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff"];
+    let index = 0;
+    
+    setInterval(() => {
+        textElement.style.color = colors[index];
+        index = (index + 1) % colors.length; // Loop through the colors
+    }, 200); // Change color every second
+}//explanation: This function changes the background color of a div element with the id "div" every 200 milliseconds, cycling through a predefined list of colors.
+
+// function sendmessage(){
+//     let chat_input = document.getElementById("chat-input");
+//     let newChat = document.createElement("p");
+//     document.getElementById("chat-app").appendChild(newChat);
+//     newChat.textContent = chat_input.value;
+//     chat_input.value = ""; // Clear the input box after sending the message
+// }
+// function calculator() {
+//     let num1 = parseFloat(document.getElementById("num1").value);
+//     let num2 = parseFloat(document.getElementById("num2").value);
+//     let operator = document.getElementById("operator").value;
+//     let result;
+
+//     switch (operator) {
+//         case "+":
+//             result = num1 + num2;
+//             break;
+//         case "-":
+//             result = num1 - num2;
+//             break;
+//         case "*":
+//             result = num1 * num2;
+//             break;
+//         case "/":
+//             result = num1 / num2;
+//             break;
+//         default:
+//             result = "Invalid operator";
+//     }
+
+//     document.getElementById("result").textContent = "Result: " + result;
+// }

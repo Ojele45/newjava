@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body id="change">
 
-    <h2 id="header">This is a header</h2>
+    <!-- <h2 id="header">This is a header</h2>
     <h2 id="header">This is a header</h2>
     <div id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque ex ipsum reiciendis, corporis adipisci perspiciatis ratione laudantium nam dignissimos libero dolor natus. Quo architecto soluta corporis tenetur ipsa? Totam, dolorem!</div>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab ducimus nesciunt beatae sequi doloremque inventore autem aspernatur fuga odit nulla possimus tenetur, assumenda magni esse, vero maxime aliquid enim?</p>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab ducimus nesciunt beatae sequi doloremque inventore autem aspernatur fuga odit nulla possimus tenetur, assumenda magni esse, vero maxime aliquid enim?</p>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab ducimus nesciunt beatae sequi doloremque inventore autem aspernatur fuga odit nulla possimus tenetur, assumenda magni esse, vero maxime aliquid enim?</p>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab ducimus nesciunt beatae sequi doloremque inventore autem aspernatur fuga odit nulla possimus tenetur, assumenda magni esse, vero maxime aliquid enim?</p>
-    <!-- <button class="but" onclick="HeaderColor()">i am a new button</button> -->
-    <!-- <button class="but" onclick="HeaderColor()">i am a new button</button> -->
+    <button class="but" onclick="HeaderColor()">i am a new button</button>
+    <button class="but" onclick="HeaderColor()">i am a new button</button>
 
     <h1 id="myId">Open</h1>
-    <!--   -->
+     
 
 
     <button id="btn">Click me</button>
@@ -33,6 +33,47 @@
         <li id="change">pepper</li>
         <li>salt</li>
         <li>thyme</li>
-    </ul>
+    </ul> -->
+
+    <div class="todo">
+        <div class="todo-function">
+            <div>
+                <h1 id="text">Todo List</h1>
+                <input type="text" id="todo-input" placeholder="Add a new todo">
+                <button onclick="AddNewTask()">Add Todo</button>
+            </div>
+            <div class="tasks-box">
+                <h3>your tasks for the day:</h3>
+                <p id="newtext"> </p>
+                <ul id="task-list">
+                    <!-- Tasks will be added here -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+ <button onclick="changeBg()">change Bg</button>
+<br/>
+<br/>
+<br/>
+<br/>
+<div>
+     <div class="ch" id="div"></div>
+    
+ <button onclick="AnimatedColorChange() ">change Bg</button>
+ <button onclick=" AnimatedTextColorChange() ">change text</button>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+ <div id="chat-app">
+
+ </div>
+ <input type="text" id="chat-input" placeholder="Type a message...">
+    <button onclick="sendmessage()">Send</button>
 </body>
 </html>

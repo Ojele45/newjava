@@ -1,4 +1,4 @@
-div{
+/* div{
     width: 700px;
     height: 200px;
     background-color: rgb(39, 0, 0);
@@ -37,4 +37,17 @@ button:hover{
     border: 2px solid rgb(7, 10, 10);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
+} */
+
+.ch{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.checked{
+    text-decoration: line-through;
+    color: red;
 }
